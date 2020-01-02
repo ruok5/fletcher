@@ -2,6 +2,8 @@ require "hashie"
 require "money"
 require "monetize"
 
+Money.locale_backend = :currency
+
 module Fletcher
   module Model
     class Base < ::Hashie::Mash         
